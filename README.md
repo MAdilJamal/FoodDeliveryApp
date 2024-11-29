@@ -14,7 +14,6 @@
 ## Glimpse
 <video width="600" height="338" controls>
   <source src="/Resources/video.mp4" type="video/mp4">
-  A short video showing a glimpse of how the UI looks.
 </video>
 
 An Online Food Ordering Website!
@@ -30,16 +29,16 @@ An Online Food Ordering Website!
 
 <h3>Dashboard</h3>
 <p>To display available items to buy</p>
-<img src="/Resources/dashboard-page-ui.png" width="600" height="338"/>
+<img src="/Resources/dashboard-ui.png" width="600" height="338"/>
 
 <h3>Order History</h3>
 <p>To display previously placed orders</p>
-<img src="/Resources/order-history.png" width="600" height="338"/>
+<img src="/Resources/order-history-page.png" width="600" height="338"/>
 
 ## Setup
-<p>Download the repository from github, extract the folder, open the project in Visual Studio.</p>
-<p>In parent directory open 'DB_Script_FoodDeliveryApp.sql' file in SQL Server Management Studio v12 or later and click 'execute'. This will create a new database named as 'FoodDeliveryAppDB' with all the required tables and stored procedures.</p>
-<p>Now open Visual Studio again and go to 'web.config' file and change the name of the server in the connection string of the project according to your server name.</p>
+<p>1. Download the repository from github, extract the folder, open the project in Visual Studio.</p>
+<p>2. In parent directory open 'DB_Script_FoodDeliveryApp.sql' file in SQL Server Management Studio v12 or later and click 'execute'. This will create a new database named as 'FoodDeliveryAppDB' with all the required tables and stored procedures.</p>
+<p>3. Now open Visual Studio again and go to 'web.config' file and change the name of the server in the connection string of the project according to your server name.</p>
 <p>That's it!  Now start the project and you are welcome.</p>
 
 ## License
