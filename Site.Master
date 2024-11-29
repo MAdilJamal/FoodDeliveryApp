@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FoodDeliveryApp.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> | FoodDeliveryApp</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <!--Header/ Navbar-->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/Dashboard">FoodDeliveryApp</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Dashboard">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Orders">Order History</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item">
+                            <asp:Button ID="btnLogout" runat="server" Text="logout" CssClass="btn nav-link" OnClick="btnLogout_Click" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header/ Navbar-->
+
+        <!--Main Content-->
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <!--Footer Section-->
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - FoodDeliveryApp</p>
+            </footer>
+            <!--Footer Section-->
+        </div>
+        <!--Main Content-->
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
