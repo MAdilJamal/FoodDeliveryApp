@@ -36,9 +36,9 @@ An Online Food Ordering Website!
 <img src="/Resources/order-history-page.png" width="600" height="338"/>
 
 ## Setup
-<p>1. Download the repository from github, extract the folder, open the project in Visual Studio.</p>
-<p>2. In parent directory open 'DB_Script_FoodDeliveryApp.sql' file in SQL Server Management Studio v12 or later and click 'execute'. This will create a new database named as 'FoodDeliveryAppDB' with all the required tables and stored procedures.</p>
-<p>3. Now open Visual Studio again and go to 'web.config' file and change the name of the server in the connection string of the project according to your server name.</p>
+<p>1. Download the repository from github, extract the zip folder, open Visual Studio and Go to File > Open > Website and select the extracted folder.</p>
+<p>2. Again go to the extracted folder, in parent directory open 'DB_Script_FoodDeliveryApp.sql' file in SQL Server Management Studio v12 or later and click 'execute'. This will create a new database named as 'FoodDeliveryAppDB' with all the required tables and stored procedures.</p>
+<p>3. Now Go to Visual Studio again and open 'web.config' file and change the name of the server in the connection string of the project according to your server name.</p>
 <p>That's it!  Now start the project and you are welcome.</p>
 
 ## License
